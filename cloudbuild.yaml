@@ -6,11 +6,11 @@ steps:
 - name: 'gcr.io/$PROJECT_ID/gcpdevops' 
   args: ['push','gcr.io/$PROJECT_ID/gcpdevops']
 #deploy contaner image to GKA
-- name: 'gcr.io/$PROJECT_ID/gcpdevops'
-  args:
-  -  run
-  - --filename=gke.yaml
-  - --image=gcr.io/$PROJECT_ID/gcpdevops
-  - --location=us-central1-c
-  - --cluster=gke-gcp-devops
-  - --namespace=gcp-devops-prod
+#- name: 'gcr.io/$PROJECT_ID/gcpdevops'
+# args:
+#  -  run
+#  - --filename=gke.yaml
+#  - --image=gcr.io/$PROJECT_ID/gcpdevops
+#  - --location=us-central1-c
+#  - --cluster=gcp-devops-project
+#  - --namespace=gcp-devops-prod
